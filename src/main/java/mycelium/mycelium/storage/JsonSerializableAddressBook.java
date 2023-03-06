@@ -10,8 +10,8 @@ import com.fasterxml.jackson.annotation.JsonRootName;
 
 import mycelium.mycelium.commons.exceptions.IllegalValueException;
 import mycelium.mycelium.model.AddressBook;
-import mycelium.mycelium.model.person.Person;
 import mycelium.mycelium.model.ReadOnlyAddressBook;
+import mycelium.mycelium.model.person.Person;
 
 /**
  * An Immutable AddressBook that is serializable to JSON format.

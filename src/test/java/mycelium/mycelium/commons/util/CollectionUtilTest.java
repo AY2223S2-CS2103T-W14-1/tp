@@ -1,17 +1,17 @@
 package mycelium.mycelium.commons.util;
 
+import static mycelium.mycelium.commons.util.CollectionUtil.requireAllNonNull;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static mycelium.mycelium.commons.util.CollectionUtil.requireAllNonNull;
-import static mycelium.mycelium.testutil.Assert.assertThrows;
 
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-import mycelium.mycelium.testutil.Assert;
 import org.junit.jupiter.api.Test;
+
+import mycelium.mycelium.testutil.Assert;
 
 public class CollectionUtilTest {
     @Test

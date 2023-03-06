@@ -6,8 +6,8 @@ import java.util.Optional;
 
 import mycelium.mycelium.commons.exceptions.DataConversionException;
 import mycelium.mycelium.commons.util.JsonUtil;
-import mycelium.mycelium.model.UserPrefs;
 import mycelium.mycelium.model.ReadOnlyUserPrefs;
+import mycelium.mycelium.model.UserPrefs;
 
 /**
  * A class to access UserPrefs stored in the hard disk as a json file
@@ -32,6 +32,7 @@ public class JsonUserPrefsStorage implements UserPrefsStorage {
 
     /**
      * Similar to {@link #readUserPrefs()}
+     *
      * @param prefsFilePath location of the data. Cannot be null.
      * @throws DataConversionException if the file format is not as expected.
      */

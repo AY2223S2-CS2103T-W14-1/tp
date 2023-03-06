@@ -4,7 +4,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import mycelium.mycelium.commons.core.Messages;
-import mycelium.mycelium.logic.parser.exceptions.ParseException;
 import mycelium.mycelium.logic.commands.AddCommand;
 import mycelium.mycelium.logic.commands.ClearCommand;
 import mycelium.mycelium.logic.commands.Command;
@@ -14,6 +13,7 @@ import mycelium.mycelium.logic.commands.ExitCommand;
 import mycelium.mycelium.logic.commands.FindCommand;
 import mycelium.mycelium.logic.commands.HelpCommand;
 import mycelium.mycelium.logic.commands.ListCommand;
+import mycelium.mycelium.logic.parser.exceptions.ParseException;
 
 /**
  * Parses user input.

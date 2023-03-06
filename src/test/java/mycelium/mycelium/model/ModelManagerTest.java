@@ -1,22 +1,21 @@
 package mycelium.mycelium.model;
 
+import static mycelium.mycelium.model.Model.PREDICATE_SHOW_ALL_PERSONS;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static mycelium.mycelium.model.Model.PREDICATE_SHOW_ALL_PERSONS;
-import static mycelium.mycelium.testutil.Assert.assertThrows;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 
-import mycelium.mycelium.testutil.AddressBookBuilder;
-import mycelium.mycelium.testutil.Assert;
-import mycelium.mycelium.testutil.TypicalPersons;
 import org.junit.jupiter.api.Test;
 
 import mycelium.mycelium.commons.core.GuiSettings;
 import mycelium.mycelium.model.person.NameContainsKeywordsPredicate;
+import mycelium.mycelium.testutil.AddressBookBuilder;
+import mycelium.mycelium.testutil.Assert;
+import mycelium.mycelium.testutil.TypicalPersons;
 
 public class ModelManagerTest {
 
@@ -95,7 +94,8 @@ public class ModelManagerTest {
 
     @Test
     public void equals() {
-        AddressBook addressBook = new AddressBookBuilder().withPerson(TypicalPersons.ALICE).withPerson(TypicalPersons.BENSON).build();
+        AddressBook addressBook =
+            new AddressBookBuilder().withPerson(TypicalPersons.ALICE).withPerson(TypicalPersons.BENSON).build();
         AddressBook differentAddressBook = new AddressBook();
         UserPrefs userPrefs = new UserPrefs();
 

@@ -7,9 +7,9 @@ import java.util.logging.Logger;
 
 import mycelium.mycelium.commons.core.LogsCenter;
 import mycelium.mycelium.commons.exceptions.DataConversionException;
-import mycelium.mycelium.model.UserPrefs;
 import mycelium.mycelium.model.ReadOnlyAddressBook;
 import mycelium.mycelium.model.ReadOnlyUserPrefs;
+import mycelium.mycelium.model.UserPrefs;
 
 /**
  * Manages storage of AddressBook data in local storage.

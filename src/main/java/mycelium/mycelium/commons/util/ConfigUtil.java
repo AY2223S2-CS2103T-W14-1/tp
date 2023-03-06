@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Optional;
 
-import mycelium.mycelium.commons.exceptions.DataConversionException;
 import mycelium.mycelium.commons.core.Config;
+import mycelium.mycelium.commons.exceptions.DataConversionException;
 
 /**
  * A class for accessing the Config File.

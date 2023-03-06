@@ -3,7 +3,6 @@ package mycelium.mycelium.logic.parser;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import mycelium.mycelium.logic.commands.Command;
-import mycelium.mycelium.logic.parser.Parser;
 import mycelium.mycelium.logic.parser.exceptions.ParseException;
 
 /**

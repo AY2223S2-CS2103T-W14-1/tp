@@ -1,14 +1,14 @@
 package mycelium.mycelium.logic.commands;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static mycelium.mycelium.commons.core.Messages.MESSAGE_PERSONS_LISTED_OVERVIEW;
 import static mycelium.mycelium.logic.commands.CommandTestUtil.assertCommandSuccess;
 import static mycelium.mycelium.testutil.TypicalPersons.CARL;
 import static mycelium.mycelium.testutil.TypicalPersons.ELLE;
 import static mycelium.mycelium.testutil.TypicalPersons.FIONA;
 import static mycelium.mycelium.testutil.TypicalPersons.getTypicalAddressBook;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -30,9 +30,9 @@ public class FindCommandTest {
     @Test
     public void equals() {
         NameContainsKeywordsPredicate firstPredicate =
-                new NameContainsKeywordsPredicate(Collections.singletonList("first"));
+            new NameContainsKeywordsPredicate(Collections.singletonList("first"));
         NameContainsKeywordsPredicate secondPredicate =
-                new NameContainsKeywordsPredicate(Collections.singletonList("second"));
+            new NameContainsKeywordsPredicate(Collections.singletonList("second"));
 
         FindCommand findFirstCommand = new FindCommand(firstPredicate);
         FindCommand findSecondCommand = new FindCommand(secondPredicate);

@@ -1,9 +1,8 @@
 package mycelium.mycelium.model.person;
 
-import mycelium.mycelium.commons.util.AppUtil;
-
 import static java.util.Objects.requireNonNull;
-import static mycelium.mycelium.commons.util.AppUtil.checkArgument;
+
+import mycelium.mycelium.commons.util.AppUtil;
 
 /**
  * Represents a Person's address in the address book.
@@ -47,8 +46,8 @@ public class Address {
     @Override
     public boolean equals(Object other) {
         return other == this // short circuit if same object
-                || (other instanceof Address // instanceof handles nulls
-                && value.equals(((Address) other).value)); // state check
+            || (other instanceof Address // instanceof handles nulls
+            && value.equals(((Address) other).value)); // state check
     }
 
     @Override

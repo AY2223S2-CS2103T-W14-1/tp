@@ -11,7 +11,6 @@ import java.util.Map;
 import org.junit.jupiter.api.Test;
 
 import javafx.application.Application;
-import mycelium.mycelium.AppParameters;
 
 public class AppParametersTest {
 

@@ -2,17 +2,16 @@ package mycelium.mycelium.ui;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static mycelium.mycelium.testutil.Assert.assertThrows;
 
 import java.net.URL;
 import java.nio.file.Path;
 
-import mycelium.mycelium.testutil.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
 import javafx.fxml.FXML;
 import mycelium.mycelium.MainApp;
+import mycelium.mycelium.testutil.Assert;
 
 public class UiPartTest {
 

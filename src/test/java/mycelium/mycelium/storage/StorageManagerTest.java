@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import java.nio.file.Path;
 
-import mycelium.mycelium.testutil.TypicalPersons;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
@@ -14,6 +13,7 @@ import mycelium.mycelium.commons.core.GuiSettings;
 import mycelium.mycelium.model.AddressBook;
 import mycelium.mycelium.model.ReadOnlyAddressBook;
 import mycelium.mycelium.model.UserPrefs;
+import mycelium.mycelium.testutil.TypicalPersons;
 
 public class StorageManagerTest {
 

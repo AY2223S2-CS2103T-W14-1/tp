@@ -7,22 +7,20 @@ import java.util.logging.Logger;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import mycelium.mycelium.logic.Logic;
-import mycelium.mycelium.logic.LogicManager;
-import mycelium.mycelium.model.AddressBook;
-import mycelium.mycelium.model.Model;
-import mycelium.mycelium.model.ModelManager;
-import mycelium.mycelium.model.UserPrefs;
-import mycelium.mycelium.ui.Ui;
-import mycelium.mycelium.ui.UiManager;
 import mycelium.mycelium.commons.core.Config;
 import mycelium.mycelium.commons.core.LogsCenter;
 import mycelium.mycelium.commons.core.Version;
 import mycelium.mycelium.commons.exceptions.DataConversionException;
 import mycelium.mycelium.commons.util.ConfigUtil;
 import mycelium.mycelium.commons.util.StringUtil;
+import mycelium.mycelium.logic.Logic;
+import mycelium.mycelium.logic.LogicManager;
+import mycelium.mycelium.model.AddressBook;
+import mycelium.mycelium.model.Model;
+import mycelium.mycelium.model.ModelManager;
 import mycelium.mycelium.model.ReadOnlyAddressBook;
 import mycelium.mycelium.model.ReadOnlyUserPrefs;
+import mycelium.mycelium.model.UserPrefs;
 import mycelium.mycelium.model.util.SampleDataUtil;
 import mycelium.mycelium.storage.AddressBookStorage;
 import mycelium.mycelium.storage.JsonAddressBookStorage;
@@ -30,6 +28,8 @@ import mycelium.mycelium.storage.JsonUserPrefsStorage;
 import mycelium.mycelium.storage.Storage;
 import mycelium.mycelium.storage.StorageManager;
 import mycelium.mycelium.storage.UserPrefsStorage;
+import mycelium.mycelium.ui.Ui;
+import mycelium.mycelium.ui.UiManager;
 
 /**
  * Runs the application.
@@ -120,7 +120,7 @@ public class MainApp extends Application {
             initializedConfig = configOptional.orElse(new Config());
         } catch (DataConversionException e) {
             logger.warning("Config file at " + configFilePathUsed + " is not in the correct format. "
-                    + "Using default config properties");
+                + "Using default config properties");
             initializedConfig = new Config();
         }
 
@@ -148,7 +148,7 @@ public class MainApp extends Application {
             initializedPrefs = prefsOptional.orElse(new UserPrefs());
         } catch (DataConversionException e) {
             logger.warning("UserPrefs file at " + prefsFilePath + " is not in the correct format. "
-                    + "Using default user prefs");
+                + "Using default user prefs");
             initializedPrefs = new UserPrefs();
         } catch (IOException e) {
             logger.warning("Problem while reading from the file. Will be starting with an empty AddressBook");

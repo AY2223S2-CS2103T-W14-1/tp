@@ -1,9 +1,8 @@
 package mycelium.mycelium.model;
 
-import static mycelium.mycelium.testutil.Assert.assertThrows;
+import org.junit.jupiter.api.Test;
 
 import mycelium.mycelium.testutil.Assert;
-import org.junit.jupiter.api.Test;
 
 public class UserPrefsTest {
 
